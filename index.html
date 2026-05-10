@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Lokesh J</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="Javascript" href="main.js">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">LJ</div>
+        <div>
+          <div class="brand-name">Lokesh Jayaraman</div>
+          <div class="muted" style="font-size:12px">Front end developer</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div>
+        <section class="card intro">
+          <h1>
+            I build responsive websites using
+            <span>HTML, CSS & JavaScript</span>
+          </h1>
+          <p class="muted">I craft beautiful, accessible interfaces and fast experiences. I blend clean code with delightful micro-interactions to make products people enjoy using.</p><br>
+
+          <div class="cta">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="resume.pdf" download class="btn btn-ghost">Download CV</a>
+          </div>
+
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div class="section-title">Featured Projects</div>
+              <div class="muted">Recent work that showcases design, frontend, and data skills</div>
+            </div>
+            <div style="align-self:center;font-size:13px;color:var(--muted)">3 items</div>
+          </div>
+
+          <div class="projects" id="projects" style="margin-top:14px">
+            <article class="project">
+              <div>
+                <h3>Todo App</h3>
+                <p class="muted" style="margin:6px 0 10px 0">Built a task management application using HTML, CSS and JavaScript</p>   <br>
+                  <a href="https://sweet-todo-app.netlify.app/" target="_blank" style="color: white">Live Demo</a>
+                  <a href="https://github.com/lokesh-J773/todo-app" target="_blank" style="color: white">GitHub</a>
+              </div>
+
+            </article>
+
+            <article class="project">
+              <div>
+                <h3>Weather App</h3>
+                <p class="muted" style="margin:6px 0 10px 0">Developed a real-time weather application using public API</p><br><br>
+                  <a href="https://location-andweather.netlify.app/" target="_blank" style="color: white">Live Demo</a>
+                  <a href="https://github.com/lokesh-J773/Weather-App/tree/main" target="_blank" style="color: white">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <div>
+                <h3>Landing Page</h3>
+                <p class="muted" style="margin:6px 0 10px 0">Created a modern responsive landing page for a business use case</p><br><br>
+                <a href="https://landingpageforportfolio.netlify.app/" target="_blank" style="color: white">Live Demo</a>
+                <a href="https://github.com/lokesh-J773/Landing-page" target="_blank" style="color: white">GitHub</a>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section id="about" class="card" style="margin-top:18px">
+          <div class="section-title">About Me</div>
+          <p class="muted">I focus on building simple, fast, and responsive websites using HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section id="contact" class="card" style="margin-top:18px">
+          <div class="section-title">Get in touch</div>
+          <form class="contact"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="hidden" name="form-name" value="contact">
+
+              <input 
+                class="input"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+
+              <input 
+                class="input"
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+
+              <input 
+                class="input"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                style="grid-column:span 2"
+              />
+
+              <textarea
+                class="input"
+                name="message"
+                placeholder="Message"
+                rows="4"
+                style="grid-column:span 2"
+                required
+              ></textarea>
+
+              <button class="btn btn-primary" style="grid-column:span 2">
+                Send message
+              </button>
+            </form>
+        </section>
+
+        <footer class="muted">© Lokesh — Crafted with attention to detail</footer>
+
+      </div>
+
+      <aside class="card profile">
+        <!-- <div class="avatar"><img>LJ</div> -->
+        <div> <img src="images/IMG-20260119-WA0001.jpg" alt="LJ" class="avatar">
+        </div>
+        <div style="font-weight:800;font-size:18px">Lokesh Jayaraman</div>
+        <div class="roles">Frontend Developer </div>
+
+        <div class="socials">
+          <a href="https://github.com/dashboard" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">Web Developer</div>
+          <div class="stat">5+ Projects</div>
+        </div>
+
+        <div style="width:100%;margin-top:8px">
+          <div class="muted" style="font-size:13px">Skills</div><br>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+      </aside>
+
+    </main>
+  </div>
+
+</body>
+</html>
